@@ -56,10 +56,13 @@ jobs:
       - run: 
           name: Run Agent
           command: |
-            claude --mcp-config /tmp/review_mcp_config.json \
-            # --allowed-tools "mcp__github__get_pull_request,mcp__github__get_pull_request_files,mcp__github__create_pull_request_review,mcp__github__add_issue_comment" \
-            --allowed-tools "mcp__github__get_pull_request,mcp__github__get_pull_request_files,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*),Bash(gh api:*)" \
-
+            # Set non-interactive mode
+            export CI=true
+            export CLAUDE_CODE_THEME=1  # Set theme to avoid prompt
+            
+            # Run with --no-interactive flag (if available) or use 'yes' to auto-answer
+            echo "1" | claude --mcp-config /tmp/review_mcp_config.json \
+            --allowed-tools "mcp__github__get_pull_request,mcp__github__get_pull_request_files,Bash(gh pr comment:*),Bash(gh pr diff:*),Bash(gh pr view:*)" \
             --output-format json \
             -p "$(cat .circleci/pr-review-prompt.txt)"
 workflows:
