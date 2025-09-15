@@ -23,20 +23,10 @@ jobs:
             {
               "mcpServers": {
                 "github": {
-                  "command": "docker",
+                  "command": "npx",
                   "args": [
-                    "run",
-                    "-i",
-                    "--rm",
-                    "-e",
-                    "GITHUB_PERSONAL_ACCESS_TOKEN",
-                    "-e",
-                    "GITHUB_HOST",
-                    "-e",
-                    "GITHUB_REPOSITORY",
-                    "-e",
-                    "GITHUB_PR_NUMBER",
-                    "ghcr.io/github/github-mcp-server:sha-efef8ae"
+                    "-y",
+                    "@modelcontextprotocol/server-github"
                   ],
                   "env": {
                     "GITHUB_PERSONAL_ACCESS_TOKEN": "${GH_TOKEN}",
