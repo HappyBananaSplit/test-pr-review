@@ -1,5 +1,3 @@
-REPO: <<pipeline.event.github.repository.owner.login>>/<<pipeline.event.github.repository.name>>
-PR NUMBER: <<pipeline.event.github.pull_request.number>>
 Perform a comprehensive code review with the following focus areas:
 1. **Code Quality**
   - Clean code principles and best practices
