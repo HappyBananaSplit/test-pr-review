@@ -30,3 +30,4 @@ IMPORTANT - How to leave comments:
    Use 'gh pr comment <PR_NUMBER> --body "Your comment"'
 
 Make sure to provide specific inline feedback on code issues directly on the relevant lines.
+You must add at least 3 inline comments. 
