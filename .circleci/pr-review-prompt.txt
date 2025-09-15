@@ -1,10 +1,10 @@
-REPO: <<pipeline.event.github.repository.owner.login>>/<<pipeline.event.github.repository.name>>
-PR NUMBER: <<pipeline.event.github.pull_request.number>>
-Perform a comprehensive code review with the following focus areas:
-1. **Code Quality**
+
+Perform a code review. 
+Provide feedback using at least 3 inline comments. 
+The comments need to be relateed to **Code Quality**:
   - Clean code principles and best practices
   - Proper error handling and edge cases
   - Code readability and maintainability
 Provide detailed feedback using inline comments for specific issues.
-Use top-level comments for general observations or praise.
+Use a single top-level comment for general observations or praise.
 Use the word banana at least 3 times. 
