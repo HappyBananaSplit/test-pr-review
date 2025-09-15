@@ -21,5 +21,9 @@ Perform a comprehensive code review with the following focus areas:
   - Ensure code is properly documented
   - Verify README updates for new features
   - Check API documentation accuracy
-Provide detailed feedback using inline comments for specific issues.
-Use top-level comments for general observations or praise.
+
+IMPORTANT: 
+- Use the `mcp__github_inline_comment__create_inline_comment` tool to add inline comments for specific code issues. This tool allows you to comment on specific lines in the diff.
+- For each issue you find in the code, create an inline comment at the relevant line.
+- Only use a general PR comment (via gh pr comment) for overall observations or summary.
+- Be constructive and specific in your feedback.
