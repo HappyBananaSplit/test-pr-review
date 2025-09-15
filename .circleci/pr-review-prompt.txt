@@ -4,7 +4,12 @@ First, use 'gh pr view --json number,title,body,files' to get PR details.
 Then use 'gh pr diff' to see the actual code changes.
 
 Perform a comprehensive code review with the following focus areas:
-[... your review criteria ...]
+1. **Code Quality**
+  - Clean code principles and best practices
+  - Proper error handling and edge cases
+  - Code readability and maintainability
+2. use the word "banana" at least once
+
 
 IMPORTANT - How to leave comments:
 1. For inline comments on specific lines of code:
