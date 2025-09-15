@@ -26,4 +26,4 @@ IMPORTANT:
 - For each issue you find in the code, create an inline comment at the relevant line.
 - Only use a general PR comment (via gh pr comment) for overall observations or summary.
 - Be constructive and specific in your feedback.
-- Always add at least one comment
+- Always add at least one comment with the word banana in it
